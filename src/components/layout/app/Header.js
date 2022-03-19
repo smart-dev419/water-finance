@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { Container, Navbar, NavbarBrand, Collapse, Nav, NavItem, NavLink, Button } from 'reactstrap';
 import { BrowserRouter as Router } from "react-router-dom";
+import useMetaMask from '../../hook/metamask';
 
 const Header = () => {
 
-    const [isOpen, setIsOpen] = useState(false)
+     const [isOpen, setIsOpen] = useState(false)
     const handleClick = () => {
         setIsOpen(!isOpen)
     }
 
+    const { connect, disconnect, isActive } = useMetaMask()
+    
     return(
         <Router>
             <header>
@@ -49,10 +52,9 @@ const Header = () => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLink href="/" className="wallet_btn">
-                                    <img src="./icon_wallet.png" alt="Wallet Icon" width={25} height={20}/>&nbsp;
-                                    Connect Wallet
-                                </NavLink>
+                                <button className="wallet_btn" onClick={isActive ? disconnect : connect}>
+                                {isActive ? ("Disconnect") : (<><img src="./icon_wallet.png" alt="Wallet Icon" width={25} height={20}/>&nbsp;Connect Wallet</>)}
+                                </button>
                             </NavItem>
                         </Nav>
                     </Navbar>

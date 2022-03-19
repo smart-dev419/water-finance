@@ -969,35 +969,38 @@
                         margin-right: 5px;
                     }
                 }
+            }
 
-                &.wallet_btn{
-                    background: #86d9fc;
-                    border-radius: 4px;
-                    font-size: 16px;
-                    font-weight: 600;
-                    padding: 10px 20px 10px 30px;
+            .wallet_btn{
+                background: #86d9fc;
+                border-radius: 4px;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 20px 10px 20px;
+                border: none;
+                color: #fff;
+                box-shadow: none;
 
+                @include media-breakpoint-down(lg) {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 8px;
+                    letter-spacing: 0;
+                    padding: 5px 10px;
+                }
+
+                img{
                     @include media-breakpoint-down(lg) {
-                        font-size: 12px;
-                        padding: 5px 10px;
+                        width: 15px;
+                        height: 15px;
                     }
 
                     @include media-breakpoint-down(md) {
-                        font-size: 8px;
-                        letter-spacing: 0;
-                        padding: 5px 10px;
-                    }
-
-                    img{
-                        @include media-breakpoint-down(lg) {
-                            width: 15px;
-                            height: 15px;
-                        }
-
-                        @include media-breakpoint-down(md) {
-                            width: 10px;
-                            height: 10px;
-                        }
+                        width: 10px;
+                        height: 10px;
                     }
                 }
             }
