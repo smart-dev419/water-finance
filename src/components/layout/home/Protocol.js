@@ -17,7 +17,7 @@ const Protocol = () => {
                             <NavLink href="/">
                                 Buy $Water 
                             </NavLink><br/>
-                            <NavLink href="/">
+                            <NavLink href="/app">
                                 Stake $WATER
                             </NavLink>
                         </Col>
@@ -27,7 +27,7 @@ const Protocol = () => {
                                 <li>
                                     <h3>1</h3>
                                     <h2>Buy $WATER</h2>
-                                    <p>To purchase your $WATER tokens on PancakeSwap, you can swap $WATER with either BNB or BUSD. Don't forget to set the slippage to a minimum of 10%! </p>
+                                    <p>To purchase your $WATER tokens on PancakeSwap, you can swap $WATER with either BNB or BUSD. Don't forget to set the slippage to a minimum of 13%! </p>
                                 </li>
                                 <li>
                                     <h3>2</h3>

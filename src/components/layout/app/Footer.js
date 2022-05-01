@@ -10,17 +10,17 @@ const Footer = () => {
                 <Container>
                     <Row>
                         <Col md="8" xs="8">
-                            <p>$WATER address: <span>0xDD4c48C0B24039969fC16D1cdF626eaB821d3384</span></p>
+                            <p>$WATER address: <span>0xb7BD896e1681701cA83181F8A231005EDA270e64</span></p>
                             <p>waterfinance.io version: <span>1.0.1</span></p>
                         </Col>
 
                         <Col md="4" xs="4">
                             <ul className="social_list">
                                 <li>
-                                    <a href="/"><img src="./icon_twitter_app.png" alt="Twitter Icon" width={30} height={25}/></a>
+                                    <a href="https://twitter.com/waterfinanceapp"><img src="./icon_twitter.png" alt="Twitter Icon" width={30} height={30}/></a>
                                 </li>
                                 <li>
-                                    <a href="/"><img src="./icon_telegram_app.png" alt="Telegram Icon" width={30} height={25}/></a>
+                                    <a href="https://t.me/waterfinanceapp"><img src="./icon_telegram.png" alt="Telegram Icon" width={30} height={30}/></a>
                                 </li>
                                 <li>
                                     <a href="/"><img src="./icon_social.png" alt="Social Icon" width={25} height={25}/></a>

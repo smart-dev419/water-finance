@@ -7,6 +7,7 @@ import Apps from "./components/Apps";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css/animate.min.css";
+import 'react-rangeslider/lib/index.css';
 import './App.scss';
 
 function App() {

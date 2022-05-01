@@ -140,3 +140,7 @@ button:focus,
 input:focus{
   box-shadow: none !important;
 }
+
+.form-check-input{
+  -webkit-appearance: none;
+}

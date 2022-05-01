@@ -1,7 +1,18 @@
 import React from 'react';
 import { Container, Row, Col, Input } from 'reactstrap';
+import Countdown, { zeroPad } from 'react-countdown';
 
-const Treasury = () => {
+const Treasury = (props) => {
+
+    const {maxapy, treamount, tokenPrice} = props;
+
+    const renderer = ({ hours, minutes, seconds, completed }) => {
+        if (completed) {
+            window.location.reload()
+        } else {
+            return <span>{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}</span>;
+        }
+    };
 
     return(
         <div id="treasury">
@@ -11,24 +22,31 @@ const Treasury = () => {
                         <ul className='treasury_wrap'>
                             <li>
                                 <label>
-                                    Treasury&nbsp;
+                                    Treasury
                                     <img src="./icon_treasury.png" alt="Treasury Icon" /> 
                                 </label>
-                                <Input defaultValue={'$10,000,000'}/>
+                                <Input value={'$' + (treamount || 'NAN')} readOnly/>
                             </li>
                             <li>
                                 <label>
-                                    Max APY&nbsp;
+                                    Fixed APY
                                     <img src="./icon_apy.png" alt="APY Icon" /> 
                                 </label>
-                                <Input defaultValue={'820.543%'}/>
+                                <Input readOnly value={'100000%'}/>
                             </li>
                             <li>
                                 <label>
-                                    $WATER Price&nbsp;
+                                    $WATER Price
                                     <img src="./icon_price.png" alt="Price Icon" /> 
                                 </label>
-                                <Input defaultValue={'$194.00'}/>
+                                <Input value={'$' + (tokenPrice || 'NAN')} readOnly/>
+                            </li>
+                            <li>
+                                <label>
+                                    Next Rebase
+                                    <img src="./icon_clock.png" alt="Clock Icon" /> 
+                                </label>
+                                <p><Countdown date={Date.now() + 1800000 - (Date.now() % 1800000)} renderer={renderer}/></p>
                             </li>
                         </ul>
                     </Col>

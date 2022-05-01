@@ -15,7 +15,7 @@ const Rewards = () => {
                             <NavLink href={'/app'} className="app_btn" target="_blank">
                                 Open App 
                             </NavLink>
-                            <NavLink href="/">
+                            <NavLink href="https://docs.waterfinance.io">
                                 Docs&nbsp;
                                 <img src="./icon_docs.png" alt="Docs Icon" />
                             </NavLink>
@@ -27,7 +27,7 @@ const Rewards = () => {
                             <ul className='rewards_list_wrap'>
                                 <li>
                                     <h2>Staking APY</h2>
-                                    <p>Each user has the ability to earn high returns on their investment, by compiling Staking NFTs in our App.</p>
+                                    <p>Each user has the ability to earn high returns on the investment, by compounded staking in our dApp.</p>
                                 </li>
                                 <li>
                                     <h2>Auto-Compounding</h2>

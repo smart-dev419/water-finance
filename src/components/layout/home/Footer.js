@@ -13,13 +13,10 @@ const Footer = () => {
                             <h3>WATER FINANCE</h3>
                             <ul>
                                 <li>
-                                    <NavLink href="/">APP</NavLink>
+                                    <NavLink href="/app">STAKING</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink href="/">NFT MINTING</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink href="/">OPENSEA COLLECTION</NavLink>
+                                    <NavLink href="/app">WITHDRAW</NavLink>
                                 </li>
                             </ul>
                         </Col>
@@ -34,7 +31,7 @@ const Footer = () => {
                                     <NavLink href="/">DEXTOOLS CHART</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink href="/">APP</NavLink>
+                                    <NavLink href="/app">APP</NavLink>
                                 </li>
                             </ul>
                         </Col>
@@ -43,17 +40,17 @@ const Footer = () => {
                             <h3>SOCIAL LINKS</h3>
                             <ul className="footer_social">
                                 <li>
-                                    <NavLink href="/"><img src="./icon_twitter.png" alt="Twitter Icon" /></NavLink>
+                                    <NavLink href="https://twitter.com/waterfinanceapp"><img src="./icon_twitter.png" alt="Twitter Icon" /></NavLink>
                                 </li>
                                 <li>
-                                    <NavLink href="/"><img src="./icon_telegram.png" alt="Telegram Icon" /></NavLink>
+                                    <NavLink href="https://t.me/waterfinanceapp"><img src="./icon_telegram.png" alt="Telegram Icon" /></NavLink>
                                 </li>
                             </ul>
                         </Col>
 
                         <Col md="3">
                             <h3>ABOUT US</h3>
-                            <p>Water Finance was created by a group of enthusiasts spread accross the world, linking staking protocols with NFTs.</p>
+                            <p>Water Finance was created to reconstruct the current Defi APY Yielding market.</p>
                         </Col>
                     </Row>
 
